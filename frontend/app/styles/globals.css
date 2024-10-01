@@ -1,0 +1,169 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-list-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: "Arial", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-user-btn {
+  background-color: #6ec1e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+.table-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.user-data {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.view-profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.view-profile-btn:hover {
+  text-decoration: underline;
+}
+
+.view-profile-btn {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* edit page design */
+/* Main form container */
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Form fields container */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Each form group (label and input) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Input styles */
+.form-group input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Action buttons container */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Save button style */
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+/* Cancel button style */
+.cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
